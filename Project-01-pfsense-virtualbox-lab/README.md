@@ -44,9 +44,6 @@ Build a small lab network using pfSense in VirtualBox and validate LAN routing +
 - ISO not attached (optical drive empty) → attached ISO under Storage
 
 ## Next Improvements
-- Add Ubuntu client VM on LAN
-- Enable DHCP on LAN and verify lease
-- Verify DNS resolution + internet access from client
 - Add guest isolation rules
 - Implement and test LAN firewall rules
 - Capture DHCP/DNS/TCP traffic in Wireshark and explain it
