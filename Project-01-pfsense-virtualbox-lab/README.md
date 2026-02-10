@@ -29,9 +29,15 @@ Build a small lab network using pfSense in VirtualBox and validate LAN routing +
 ## Validation / Evidence
 - Host can reach pfSense web UI at https://192.168.10.1
 - Evidence: see `/evidence`
-- Tests:
-  - `ping 192.168.10.1`
-  - Browser access to Web UI
+- Ubuntu LAN client received DHCP lease from pfSense
+- Default gateway set to pfSense LAN IP (192.168.10.1)
+- Client can reach pfSense gateway
+- DNS resolution and internet connectivity verified
+- Evidence screenshots located in `/evidence`
+
+### Tests Performed
+  - [x] `ping 192.168.10.1`
+  - [x] Browser access to Web UI
 
 ## Issues & Fixes
 - ISO access issues (Windows blocking/permissions) → moved ISO + unblocked
@@ -42,4 +48,5 @@ Build a small lab network using pfSense in VirtualBox and validate LAN routing +
 - Enable DHCP on LAN and verify lease
 - Verify DNS resolution + internet access from client
 - Add guest isolation rules
+- Implement and test LAN firewall rules
 - Capture DHCP/DNS/TCP traffic in Wireshark and explain it
